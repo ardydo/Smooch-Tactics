@@ -1,4 +1,4 @@
-extends Node2D
+extends "character.gd"
 
 # directions enuns
 enum DIRECTIONS {
@@ -56,6 +56,10 @@ func _input(event):
 		
 		# emitting the signal to move
 		# signalManager.emit_signal("step")
+	
+	# drink test
+	# if Input.is_action_just_pressed("ui_select"):
+	#	give_drink()
 
 func move():
 	var dir = direction
