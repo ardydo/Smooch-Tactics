@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa comida.png-c61bf4d03785a7f69edde095bb3687e2.stex"
+path="res://.import/mesa_comida.png-0144e4f6551aba7cde7be2bba894fb1b.stex"
 
 [deps]
 
-source_file="res://assets/mesa comida.png"
-source_md5="f39880d5f02af22404d64c56ff21b9d4"
+source_file="res://assets/mesa_comida.png"
+source_md5="2f73c1d21b1889a1949dcceae7851ba5"
 
-dest_files=[ "res://.import/mesa comida.png-c61bf4d03785a7f69edde095bb3687e2.stex" ]
-dest_md5="7dc32273015dc45093c61bdbcd364580"
+dest_files=[ "res://.import/mesa_comida.png-0144e4f6551aba7cde7be2bba894fb1b.stex" ]
+dest_md5="db98f94d06d559da268233691ccdeada"
 
 [params]
 
