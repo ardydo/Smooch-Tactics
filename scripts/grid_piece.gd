@@ -1,10 +1,5 @@
-extends Control
-
-onready var spr_destaque = $center/sprites/destaque
+extends "hideable.gd"
 
 func _ready():
-	destaque()
-
-func destaque():
-	var a = spr_destaque.visible
-	spr_destaque.visible = !a
+	to_hide = $center/sprites/destaque
+	toggle_hide()
