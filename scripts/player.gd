@@ -1,5 +1,7 @@
 extends "character.gd"
 
+onready var inter = $interactive_area
+
 # directions enuns
 enum DIRECTIONS {
 	RIGHT,
@@ -33,6 +35,8 @@ func _ready():
 	
 	# connecting the signal to move to move in sync with the game
 	# signalManager.connect("step", self, "move")
+	
+	inter.connect("area_entered", self, "interaction")
 
 func _input(event):
 	# key storing
@@ -118,3 +122,11 @@ func rotate(dir):
 		
 func damage():
 	print("ouchies")
+
+func interaction(target):
+	var a = target.get_parent().get_parent()
+	print(a.get_name())
+	if a.is_in_group("smoochable"):
+		print("SMOOCH")
+	else:
+		print("nothing to do")

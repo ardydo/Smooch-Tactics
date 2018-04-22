@@ -24,14 +24,19 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="pensamento" type="Position2D" parent="." index="3"]
 
-position = Vector2( 19.9122, -13.0261 )
+position = Vector2( 16.9813, -8.94379 )
+
+[node name="spr_pensamento" type="Sprite" parent="pensamento" index="0"]
+
+scale = Vector2( 0.25, 0.25 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="base" parent="." index="4" instance=ExtResource( 2 )]
 
 [node name="sprites" type="Sprite" parent="." index="5"]
 
 centered = false
-_sections_unfolded = [ "Offset" ]
+_sections_unfolded = [ "Offset", "Z Index" ]
 
 [node name="character" type="Sprite" parent="sprites" index="0"]
 
