@@ -70,8 +70,8 @@ func move():
 			canMove[pos] = false
 		else:
 			canMove[pos] = true
+			print("moving")
 	
-	print("moving!")
 	# rotating
 	# rotate(dir)
 	# can I move?
