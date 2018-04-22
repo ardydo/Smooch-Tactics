@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex"
+path="res://.import/janelao.png-3734bf15f6fa587e8749393450f495e4.stex"
 
 [deps]
 
-source_file="res://assets/mesa_redonda.png"
-source_md5="eb3d420ed6a5958db84725277328d82d"
+source_file="res://assets/janelao.png"
+source_md5="55d3a681b751ef808d0540d0de884760"
 
-dest_files=[ "res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex" ]
-dest_md5="9d664f7de131afed53ac4814255298a3"
+dest_files=[ "res://.import/janelao.png-3734bf15f6fa587e8749393450f495e4.stex" ]
+dest_md5="7ca3f615bf763e8f5358df9fc098d0af"
 
 [params]
 

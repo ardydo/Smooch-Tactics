@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex"
+path="res://.import/radio.png-436755cfa48ec1e1b2577687abc2a2e9.stex"
 
 [deps]
 
-source_file="res://assets/mesa_redonda.png"
-source_md5="eb3d420ed6a5958db84725277328d82d"
+source_file="res://assets/radio.png"
+source_md5="eed74f1e47c5d886fced258e6fa517ed"
 
-dest_files=[ "res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex" ]
-dest_md5="9d664f7de131afed53ac4814255298a3"
+dest_files=[ "res://.import/radio.png-436755cfa48ec1e1b2577687abc2a2e9.stex" ]
+dest_md5="1896e49a44ed8715901f781a99cb33d3"
 
 [params]
 

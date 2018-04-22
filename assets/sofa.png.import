@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex"
+path="res://.import/sofa.png-66979633cbf3dc769c7ec398c1306bc1.stex"
 
 [deps]
 
-source_file="res://assets/mesa_redonda.png"
-source_md5="eb3d420ed6a5958db84725277328d82d"
+source_file="res://assets/sofa.png"
+source_md5="c6d89959fa0b444d27194b13c514a60b"
 
-dest_files=[ "res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex" ]
-dest_md5="9d664f7de131afed53ac4814255298a3"
+dest_files=[ "res://.import/sofa.png-66979633cbf3dc769c7ec398c1306bc1.stex" ]
+dest_md5="1ef19d7f9507eff5a8a20483613a8181"
 
 [params]
 

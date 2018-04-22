@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex"
+path="res://.import/parede.png-88be616bfcf52e9a353d807299989566.stex"
 
 [deps]
 
-source_file="res://assets/mesa_redonda.png"
-source_md5="eb3d420ed6a5958db84725277328d82d"
+source_file="res://assets/parede.png"
+source_md5="5d894ae6f2f0b0d99465a0d30c38e824"
 
-dest_files=[ "res://.import/mesa_redonda.png-601f1df07dfa3034d09c52654f0bfcbd.stex" ]
-dest_md5="9d664f7de131afed53ac4814255298a3"
+dest_files=[ "res://.import/parede.png-88be616bfcf52e9a353d807299989566.stex" ]
+dest_md5="fcadc64c4c7b2a1d48edf0d9c8822294"
 
 [params]
 
