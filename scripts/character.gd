@@ -8,9 +8,10 @@ var drinking = false
 func _ready():
 	print(hand1)
 	print(hand2)
+	add_to_group("characters")
 
 func give_drink():
-	if not drinking():
+	if not drinking:
 		var a = drink.instance()
 		a.set_position(hand1.get_position())
 		add_child(a)
