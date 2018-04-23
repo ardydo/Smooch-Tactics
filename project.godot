@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Smooch Tactics"
+config/name="Smooch"
 run/main_scene="res://scenes/menu.tscn"
 boot_splash/image="res://assets/splash.png"
 config/icon="res://icon.png"
