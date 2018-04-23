@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://objects/drink_table.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/temp_bg.png" type="Texture" id=2]
+[ext_resource path="res://objects/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://objects/character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://objects/smoochable.tscn" type="PackedScene" id=5]
+[ext_resource path="res://objects/drinker.tscn" type="PackedScene" id=6]
+
+[node name="game" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="mesa" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 64, 48 )
+z_index = 0
+
+[node name="bg" type="Sprite" parent="." index="1"]
+
+z_index = -10
+texture = ExtResource( 2 )
+centered = false
+_sections_unfolded = [ "Z Index" ]
+
+[node name="player" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 32, 96 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="character" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 144, 64 )
+
+[node name="smoochable" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 208, 128 )
+
+[node name="drinker" parent="." index="5" instance=ExtResource( 6 )]
+
+position = Vector2( 112, 144 )
+
+
