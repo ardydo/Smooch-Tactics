@@ -7,7 +7,7 @@
 [ext_resource path="res://objects/smoochable.tscn" type="PackedScene" id=5]
 [ext_resource path="res://objects/drinker.tscn" type="PackedScene" id=6]
 
-[node name="game" type="Control" index="0"]
+[node name="game" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0

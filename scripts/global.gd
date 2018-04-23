@@ -3,7 +3,10 @@ extends Control
 var os = OS.get_name()
 
 var STAGES = [
-	"res://scenes/room1.tscn"
+	"res://scenes/room1.tscn",
+	"res://scenes/room2.tscn",
+	"res://scenes/room3.tscn",
+	"res://scenes/end.tscn"
 	]
 var stage = -1
 
