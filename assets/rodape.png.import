@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parede.png-88be616bfcf52e9a353d807299989566.stex"
+path="res://.import/rodape.png-9832d0322a3586ca3c568ac43b43d463.stex"
 
 [deps]
 
-source_file="res://assets/parede.png"
-source_md5="104bd305a02a0eab4df47fe2e6545515"
+source_file="res://assets/rodape.png"
+source_md5="a8c85c0b720181558cd337e7b2653d91"
 
-dest_files=[ "res://.import/parede.png-88be616bfcf52e9a353d807299989566.stex" ]
-dest_md5="0bc5ec454abcffd33fdb88bff24caea7"
+dest_files=[ "res://.import/rodape.png-9832d0322a3586ca3c568ac43b43d463.stex" ]
+dest_md5="22d665e1d82cf46459793b18428a5859"
 
 [params]
 
