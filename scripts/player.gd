@@ -128,5 +128,9 @@ func interaction(target):
 	print(a.get_name())
 	if a.is_in_group("smoochable"):
 		print("SMOOCH")
+	elif a.is_in_group("drinker") and drinking:
+		a.drunk()
+		a.give_drink()
+		drinkID.queue_free()
 	else:
 		print("nothing to do")
