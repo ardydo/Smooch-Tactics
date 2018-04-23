@@ -1,5 +1,8 @@
 extends "character.gd"
 
+var time_to_change = 1.5
+var timer = Timer.new()
+
 onready var inter = $interactive_area
 
 onready var poseKiss = load("res://objects/kissing.tscn")
@@ -41,6 +44,12 @@ func _ready():
 	# signalManager.connect("step", self, "move")
 	
 	inter.connect("area_entered", self, "interaction")
+	
+	var c = timer
+	add_child(c)
+	c.connect("timeout", self, "next_level")
+	c.set_one_shot(true)
+	c.set_wait_time(time_to_change)
 
 func _input(event):
 	if control:
@@ -143,10 +152,18 @@ func interaction(target):
 		print("nothing to do")
 
 func kiss(other):
+	# hide sprites
 	hide()
 	other.hide()
+	# spawn kiss
 	var a = get_position()
 	var b = poseKiss.instance()
 	b.set_position(a)
 	get_parent().add_child(b)
-	print(b)
+	#start timer
+	timer.start()
+	
+func next_level():
+	print("timeout!")
+	global.next_stage()
+	

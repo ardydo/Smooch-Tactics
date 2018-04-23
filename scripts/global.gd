@@ -2,6 +2,11 @@ extends Control
 
 var os = OS.get_name()
 
+var STAGES = [
+	"res://scenes/room1.tscn"
+	]
+var stage = -1
+
 # reload scene
 func reload():
 	get_tree().reload_current_scene()
@@ -23,3 +28,8 @@ func _input(event):
 func go(a):
 	print("changing screen to " + str(a))
 	get_tree().change_scene(a)
+func next_stage():
+	stage += 1
+	var a = stage
+	print(a)
+	go(STAGES[a])
