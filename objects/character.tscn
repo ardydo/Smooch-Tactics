@@ -28,7 +28,7 @@ position = Vector2( 16.9813, -8.94379 )
 
 [node name="spr_pensamento" type="Sprite" parent="pensamento" index="0"]
 
-scale = Vector2( 0.25, 0.25 )
+scale = Vector2( 0.5, 0.5 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="base" parent="." index="4" instance=ExtResource( 2 )]
