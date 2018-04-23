@@ -2,6 +2,8 @@ extends "character.gd"
 
 onready var inter = $interactive_area
 
+onready var poseKiss = load("res://objects/kissing.tscn")
+
 # directions enuns
 enum DIRECTIONS {
 	RIGHT,
@@ -27,6 +29,8 @@ var dist = 16
 ## direction to walk
 var direction = 0
 
+var control = true
+
 func _ready():
 	# enabling the raycasts
 	for item in rays:
@@ -39,27 +43,28 @@ func _ready():
 	inter.connect("area_entered", self, "interaction")
 
 func _input(event):
-	# key storing
-	var l = Input.is_action_just_pressed("ui_left")
-	var r = Input.is_action_just_pressed("ui_right")
-	var u = Input.is_action_just_pressed("ui_up")
-	var d = Input.is_action_just_pressed("ui_down")
-	
-	# only acting if a movement key was pressed
-	if l or r or u or d:
-		if l:
-			direction = LEFT
-		if r:
-			direction = RIGHT
-		if u:
-			direction = UP
-		if d:
-			direction = DOWN
+	if control:
+		# key storing
+		var l = Input.is_action_just_pressed("ui_left")
+		var r = Input.is_action_just_pressed("ui_right")
+		var u = Input.is_action_just_pressed("ui_up")
+		var d = Input.is_action_just_pressed("ui_down")
 		
-		move()
-		
-		# emitting the signal to move
-		# signalManager.emit_signal("step")
+		# only acting if a movement key was pressed
+		if l or r or u or d:
+			if l:
+				direction = LEFT
+			if r:
+				direction = RIGHT
+			if u:
+				direction = UP
+			if d:
+				direction = DOWN
+			
+			move()
+			
+			# emitting the signal to move
+			# signalManager.emit_signal("step")
 	
 	# drink test
 	# if Input.is_action_just_pressed("ui_select"):
@@ -128,9 +133,20 @@ func interaction(target):
 	print(a.get_name())
 	if a.is_in_group("smoochable"):
 		print("SMOOCH")
+		control = false
+		kiss(a)
 	elif a.is_in_group("drinker") and drinking:
 		a.drunk()
 		a.give_drink()
 		drinkID.queue_free()
 	else:
 		print("nothing to do")
+
+func kiss(other):
+	hide()
+	other.hide()
+	var a = get_position()
+	var b = poseKiss.instance()
+	b.set_position(a)
+	get_parent().add_child(b)
+	print(b)
